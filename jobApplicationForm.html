@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Job Application</title>
+    </head>
+
+<body>
+    <h2>Job Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+    <fieldset>
+         <legend>Account Information</legend>
+         <div class="field">
+            <label>Email Address:</label>
+            <input type="text" name="email">
+        </div>
+
+        <div class="field">
+            <label>Password:</label>
+            <input type="password" name="password">
+        </div>
+
+        <div class="field">
+            <label>Repeat Password:</label>
+            <input type="password" name="password_r">
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+        <div class="field">
+            <label>First Name:</label>
+            <input type="text" name="firstName">
+        </div>
+
+        <div class="field">
+            <label>Last Name:</label>
+            <input type="text" name="lastName">
+        </div>
+
+        <div class="field">
+            <label>Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+        </div>
+
+        <div class="field">
+            <label>Address:</label>
+            <input type="text" name="address">
+        </div>
+        <div class="field">
+            <label>City:</label>
+            <input type="text" name="city">
+        </div>
+
+        <div class="field">
+            <label>State:</label>
+            <select name="state">
+                <option value="" selected="true">Choose a state</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennslyvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Zip Code:</label>
+            <input type="text" name="zip">
+        </div>
+
+        <div class="field">
+            <label>Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+            <small>(Required Format: 123-456-7890)</small>
+        </div>
+
+        <div class="field">
+            <label>Are you a citizen of the United States?</label>
+            <input type="radio" id="answerOfCitizenship" name="answerOfCitizenship" value="yes">Yes <input type="radio" id="answerOfCitizenship" name="answerOfCitizenship">No
+        </div>
+                
+    </fieldset>
+
+    <fieldset>
+        <legend>Availability of work</legend>
+        <div class="field">
+            <label>Are you legally able to be employed in the United States</label>
+            <input type="radio" name="legal" value="yes">Yes
+            <input type="radio" name="legal" value="no">No
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label> What type of position are you looking for? (Check all of the positions that apply)</label>
+            <ul>
+                <li><input type="checkbox" name="positionPT" value="partTime">Part time</li>
+                <li><input type="checkbox" name="positionFT" value="fullTime">Full Time</li>
+                <li><input type="checkbox" name="positionSL" value="seasonal">Seasonal</li>
+                <li><input type="checkbox" name="postionTP" value="temporary">Temporary</li>
+            </ul>
+        </div>
+
+        <div class="field">
+            <label>Hours available to work</label>
+            <table>
+                <tr>
+                    <td></td>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <th>From</th>
+                        <td><input type="time" size="5" name="sundayFrom"></td>
+                        <td><input type="time" size="5" name="mondayFrom"></td>
+                        <td><input type="time" size="5" name="tuesdayFrom"></td>
+                        <td><input type="time" size="5" name="wednesdayFrom"></td>
+                        <td><input type="time" size="5" name="thursdayFrom"></td>
+                        <td><input type="time" size="5" name="fridayFrom"></td>
+                        <td><input type="time" size="5" name="saturdayFrom"></td>
+                </tr>
+                <tr>
+                    <th>Until</th>
+                        <td><input type="time" size="5" name="sundayUntil"></td>
+                        <td><input type="time" size="5" name="mondayUntil"></td>
+                        <td><input type="time" size="5" name="tuesdayUntil"></td>
+                        <td><input type="time" size="5" name="wednesdayUntil"></td>
+                        <td><input type="time" size="5" name="thursdayUntil"></td>
+                        <td><input type="time" size="5" name="fridayUntil"></td>
+                        <td><input type="time" size="5" name="saturdayFrom"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label>What date could you start this job?</label>
+            <input type="date" id="startDate" value="startDate">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Personal Statement</legend>
+        <div class="field">
+            <label>Why would you be a good fit for this job?</label>
+            <br>
+            <textarea name="jobFit" rows="6" cols="60"></textarea>
+        </div>
+        <div class="field">
+            <label>Describe recent experience that is relevant</label>
+            <br>
+            <textarea name="project" row="6" cols="60"></textarea>
+        </div>
+        <br>
+        <div class="field"></div>
+            <label>Attatch a resume</label>
+            <input type="file" id="resume" name="resume">
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit Form">
+
+</form>
+</body>
+</html>
