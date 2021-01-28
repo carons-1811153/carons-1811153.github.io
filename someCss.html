@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cooper's Original Website</title>
+        <link rel ="stylesheet"
+        type ="text/css"
+        href = "anExternal.css" />
+    </head>
+   
+    
+    <h1>Paragraphs with different fonts</h1>
+    <br />
+    <p style="font-family:Arial">This is the first paragraph with Arial Font</p>
+    <br />
+    <p style="font-family:Georgia">This is the second paragraph with Georgia Font</p>
+    <br />
+    <h1>Two pictures that were orignally different sizes resized to 50px by 50px</h1>
+    <img src="Cooper.JPG" alt="Cooper" height="50px" width="50px">
+    <img src="computer.JPG" alt="copmuter" height="50px" width="50px">
+    <br />
+    <h1>Setting a blue text outline and convert text to small caps (not taught in class)</h1>
+    <p1 style="outline: 2px solid; outline-color: blue; font-size:20px; font-variant:small-caps;">This Css Feature of the blue outline with 2px size was not taught in class and converting text to small caps</p1>
+    <br />
+    <h1>The Text "Centered" that is centered on a photo</h1>
+    <head>
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <style>
+        .image {
+           position: relative;
+           text-align: center;
+           color: black;
+           font-size:20px;
+        }
+
+        .text {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    </head>
+    <body>
+
+    <div class="image">
+        <img src="myphoto.JPG" alt="myphoto" height="200px" width="200px">
+        <div class="text">Centered</div>
+    </div>
+    </body>
+    <br />
+    <h1>A photo with 20 pixel margins on each side</h1>
+    <style>
+        .computer {
+            margin: 20px 20px 20px 20px;
+        }
+    </style>
+    <div class="computer">
+        <img src="computer.JPG" alt="computer" height="300px" width="300 px">
+    </div>
+    <br />
+    <h1>Text with a border that uses dotted line</h1>
+    <style>
+        .dotted {
+            border-style:dotted;
+        }
+    </style>
+    <div class="dotted">
+        <h1 style="font-family:Georgia";font-size:20px>This is text with dotted lines</h1>
+    </div>
+    <br />
+    <h1>A button with rounded border corners</h1>
+    <button type="button">Click Here</button>
+    <style>
+    button{
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    </style>
+    
+    <h1>Creating a floated image to the right</h1>
+    <style>
+        .float {
+            float: right;
+        }
+    </style>
+    <div class="float">
+        <img src="Keurig.JPG" alt="Keurig" height="400px" width="400px">
+    </div>
+    <br />
+</html>
